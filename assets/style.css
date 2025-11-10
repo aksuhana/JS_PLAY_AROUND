@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  background: #f7f7f7;
+  color: #333;
+}
+
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+
+/* Sidebar */
+#sidebar {
+  width: 30%;
+  background: #222;
+  color: #eee;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+
+#sidebar h2 {
+  margin-top: 0;
+  color: #00ffcc;
+}
+
+
+#sidebar li {
+  list-style: none;
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+
+#sidebar li:hover {
+  background: #333;
+}
+
+
+/* Output area */
+#output {
+  width: 70%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+#output h2 {
+  margin-top: 0;
+  color: #0074D9;
+}
+
+
+pre.output, #result {
+  background: #111;
+  color: #00ff99;
+  padding: 15px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+
+#toolbar {
+  background: #eee;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+#toolbar button {
+  cursor: pointer;
+  font-family: monospace;
+  padding: 6px 12px;
+  border: none;
+  background: #0074d9;
+  color: white;
+  border-radius: 4px;
+}
+
+
+#toolbar button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+
+#editor {
+  flex: 1;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: #111;
+  color: #00ff99;
+  overflow-y: auto;
+}
+
+
+#result {
+  background: #000;
+  color: #00ff99;
+  padding: 10px;
+  min-height: 150px;
+  max-height: 250px;
+  overflow-y: auto;
+  border-top: 2px solid #0074d9;
+  white-space: pre-wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
